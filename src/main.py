@@ -14,7 +14,6 @@ USERNAME = os.getenv("USERNAME")
 PASSWORD = os.getenv("PASSWORD")
 DRIVER = webdriver.Chrome()
 DTEMAP = dte_mapping.create_dtemap()
-print(DTEMAP)
 
 
 def login():
