@@ -14,6 +14,7 @@ USERNAME = os.getenv("USERNAME")
 PASSWORD = os.getenv("PASSWORD")
 DRIVER = webdriver.Chrome()
 DTEMAP = dte_mapping.create_dtemap()
+print(DTEMAP)
 
 
 def login():
@@ -74,6 +75,7 @@ def nav_sched_today():
     )
     today_btn.click()
     DRIVER.implicitly_wait(1)
+    sleep(1)
 
 
 def sched_date() -> dt.date:

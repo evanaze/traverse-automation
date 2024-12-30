@@ -17,7 +17,7 @@ def create_dtemap(length: int = 10) -> dict:
         start *= 9
         for phase in phases:
             for body_section in body_sections:
-                i += 1
                 dte = datetime.date(2025, 1, 1) + datetime.timedelta(start + i)
                 dtemap[dte] = (phase, body_section)
+                i += 1
     return dtemap
